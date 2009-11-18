@@ -1,0 +1,26 @@
+<div id="game-list">
+	<h1>Games</h1>
+
+	<table>
+	<% for game in @games %>
+  		<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+		<td class="list-description">
+			<dl>
+   			 <dt><%=h game.name %></dt>
+   			 <dd>Description: <%=h game.description %></dd>
+   			 <dd>Author: <%=h game.created_by %></dd>
+			 <dd>Created at: <%=h game.created_at %></dd>
+			</dl>
+		</td>
+		<td class="list-actions">
+    		<%= link_to 'Show', game %><br/>
+   		 	<%= link_to 'Edit', edit_game_path(game) %><br/>
+    		<%= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete %>
+		</td>
+  </tr>
+<% end %>
+</table>
+</div>
+<br />
+
+<%= link_to 'New game', new_game_path %>

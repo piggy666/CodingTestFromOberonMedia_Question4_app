@@ -1,0 +1,97 @@
+/* Global styles */
+
+h1 {
+        font:  200% sans-serif;
+        color: #230;
+        border-bottom: 4px dotted #88d;
+}
+
+/* Styles for products/index */
+
+#game-list table {
+        border-collapse: collapse;
+}
+
+#game-list table tr td {
+        padding: 10px;
+        vertical-align: top;
+}
+
+
+#game-list .list-description {
+  width:        100%;
+}
+
+#game-list .list-description dl {
+        margin: 1;
+}
+
+#game-list .list-description dt {
+	color:        #254;
+	font-weight:  bold;
+	font-size:    larger;
+}
+
+#game-list .list-description dd {
+        margin: 1;
+}
+
+#game-list .list-actions {
+  font-size:    x-small;
+  text-align:   right;
+  padding-left: 1em;
+  padding-top:	3em;
+}
+
+#game-list .list-line-even {
+  background:   #e08f8f;
+}
+
+#game-list .list-line-odd {
+  background:   #fff09f;
+}
+
+
+/* The error box */
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: #EEFFEE;
+  display: inline;
+}
+
+.fieldWithErrors * {
+  background-color: red;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+
